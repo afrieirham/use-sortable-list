@@ -99,10 +99,9 @@ const LibraryDemoPage = () => {
             dependencies. No bloat. Just works.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
-            <button
-              type="button"
-              className="bg-slate-900 text-white px-8 py-3 rounded-full font-bold hover:bg-slate-800 transition-all flex items-center gap-2 shadow-lg shadow-slate-200"
-              onClick={() => window.alert("Documentation scroll logic here")}
+            <a
+              href="https://github.com/afrieirham/use-sortable-list#readme"
+              className="bg-slate-900 text-white px-8 py-3 cursor-pointer rounded-full font-bold hover:bg-slate-800 transition-all flex items-center gap-2 shadow-lg shadow-slate-200"
             >
               Read the docs
               <svg
@@ -119,7 +118,7 @@ const LibraryDemoPage = () => {
                   d="M9 5l7 7-7 7"
                 />
               </svg>
-            </button>
+            </a>
           </div>
         </div>
       </header>
