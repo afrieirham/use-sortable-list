@@ -14,6 +14,9 @@ const LibraryDemoPage = () => {
               className="w-8 h-8"
               alt="use sortable list logo"
             />
+            <span className="font-bold tracking-tight text-lg">
+              use-sortable-list
+            </span>
           </div>
 
           {/* Top Right: Links & GitHub */}
@@ -58,11 +61,14 @@ const LibraryDemoPage = () => {
           </div>
         </div>
       </nav>
-      {/* --- HERO SECTION --- */}
-      <header className="bg-white border-b border-slate-200 py-16 px-4">
+      <header className="bg-white border-b border-slate-100 py-24 px-4">
         <div className="max-w-5xl mx-auto text-center">
-          <h1 className="text-5xl font-extrabold tracking-tight text-slate-900 mb-4">
-            use-sortable-list
+          <h1 className="text-6xl font-extrabold tracking-tight text-slate-900 mb-6">
+            DnD reordering,
+            <span className="text-blue-600 text-5xl sm:text-6xl italic">
+              {" "}
+              unbloated.
+            </span>
           </h1>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
             A tiny, headless React hook for native drag-and-drop reordering. No
