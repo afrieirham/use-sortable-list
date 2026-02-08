@@ -40,7 +40,7 @@ const LibraryDemoPage = () => {
           {/* Top Left: Logo */}
           <div className="flex items-center gap-6">
             <img
-              src="https://raw.githubusercontent.com/afrieirham/use-sortable-list/refs/heads/main/public/logo.png"
+              src="/logo.png"
               className="w-8 h-8"
               alt="use sortable list logo"
             />
