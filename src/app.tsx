@@ -1,4 +1,4 @@
-import CollapsibleCode from "./code-block";
+import CodeBlock from "./code-block";
 import { HandleOnlyUsage } from "./demo/handle-only-usage";
 import { StandardUsage } from "./demo/standard-usage";
 import sortableSource from "./demo/use-sortable-list?raw";
@@ -76,7 +76,7 @@ const LibraryDemoPage = () => {
             A tiny, headless React hook for native drag-and-drop reordering. No
             dependencies. No bloat. Just works.
           </p>
-          <CollapsibleCode title="use-sortable-list.ts" code={sortableSource} />
+          <CodeBlock title="use-sortable-list.ts" code={sortableSource} />
         </div>
       </header>
 

@@ -57,7 +57,7 @@ const highlightCode = (code: string) => {
   return html;
 };
 
-const CollapsibleSource = ({ title, code }: Props) => {
+const CodeBlock = ({ title, code }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [copied, setCopied] = useState(false);
 
@@ -161,4 +161,4 @@ const CollapsibleSource = ({ title, code }: Props) => {
   );
 };
 
-export default CollapsibleSource;
+export default CodeBlock;
