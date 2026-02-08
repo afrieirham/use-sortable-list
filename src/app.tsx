@@ -1,5 +1,7 @@
+import CollapsibleCode from "./code-block";
 import { HandleOnlyUsage } from "./demo/handle-only-usage";
 import { StandardUsage } from "./demo/standard-usage";
+import sortableSource from "./demo/use-sortable-list?raw";
 
 const LibraryDemoPage = () => {
   return (
@@ -74,34 +76,7 @@ const LibraryDemoPage = () => {
             A tiny, headless React hook for native drag-and-drop reordering. No
             dependencies. No bloat. Just works.
           </p>
-          <div className="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
-            <a
-              href="https://github.com/afrieirham/use-sortable-list#readme"
-              className="bg-black text-white px-8 py-3 cursor-pointer rounded-full font-bold hover:bg-black/80 transition-all flex items-center gap-2 shadow-lg shadow-black/20"
-            >
-              Read the docs
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <title>Chevron Right Icon</title>
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2.5}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </a>
-            <a
-              href="https://github.com/afrieirham/use-sortable-list/blob/main/src/demo"
-              className="hover:underline"
-            >
-              See code example
-            </a>
-          </div>
+          <CollapsibleCode title="use-sortable-list.ts" code={sortableSource} />
         </div>
       </header>
 
