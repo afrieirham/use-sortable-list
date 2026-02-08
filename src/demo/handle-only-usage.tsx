@@ -52,7 +52,7 @@ export const HandleOnlyUsage = () => {
                 key={file.id}
                 {...props}
                 className={`
-                  flex items-center gap-4 p-4 rounded-xl border-2 transition-all bg-white
+                  flex items-center gap-4 p-4 rounded-xl border-2 transition-all bg-white duration-200 ease-in-out
                   ${
                     isDragging
                       ? "opacity-30 border-dashed border-emerald-500 bg-emerald-50"
@@ -62,7 +62,7 @@ export const HandleOnlyUsage = () => {
               >
                 {/* Handle Icon */}
                 <button
-                  {...getHandleProps()}
+                  {...getHandleProps(index)}
                   className="p-2 text-slate-400 hover:bg-slate-100 rounded-lg transition-colors cursor-grab active:cursor-grabbing"
                   aria-label="Drag handle"
                 >

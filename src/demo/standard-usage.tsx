@@ -53,7 +53,7 @@ export const StandardUsage = () => {
                 key={task.id}
                 {...props}
                 className={`
-                  group flex items-center justify-between p-4 rounded-xl border-2 transition-all cursor-move select-none
+                  group flex items-center justify-between p-4 rounded-xl border-2 cursor-move select-none transition-all duration-200 ease-in-out
                   ${
                     isDragging
                       ? "opacity-30 border-dashed border-blue-500 bg-blue-50"
