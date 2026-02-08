@@ -137,12 +137,18 @@ const LibraryDemoPage = () => {
         </section>
       </main>
 
-      <footer className="py-12 text-center text-slate-400 text-sm border-t border-slate-200 mt-12 bg-white">
-        &copy; {new Date().getFullYear()} use-sortable-list. Created by{" "}
+      <footer className="py-16 text-center text-slate-400 text-sm border-t border-slate-200 mt-20 bg-white">
+        &copy; {new Date().getFullYear()} use-local-state. Created by{" "}
         <a href="https://afrieirham.com" className="hover:underline">
           Afrie
         </a>
-        .
+        . Icon by{" "}
+        <a
+          href="https://www.freepik.com/icon/slide_2105981#fromView=search&page=1&position=60&uuid=45dce78b-47d8-4a95-a657-e69132d84ea0"
+          className="hover:underline"
+        >
+          Freepik
+        </a>
       </footer>
     </div>
   );
