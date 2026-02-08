@@ -90,7 +90,7 @@ const LibraryDemoPage = () => {
               </svg>
             </a>
             <a
-              href="https://github.com/afrieirham/use-sortable-list/blob/main/src/App.tsx#L128"
+              href="https://github.com/afrieirham/use-sortable-list/blob/main/src/demo"
               className="hover:underline"
             >
               See code example
