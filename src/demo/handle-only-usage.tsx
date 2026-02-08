@@ -32,8 +32,7 @@ const HandleIcon = () => (
 
 export const HandleOnlyUsage = () => {
   const [files, setFiles] = useState(INITIAL_FILES);
-  const { getItemProps: getFileProps, getHandleProps: getFileHandleProps } =
-    useSortableList(files, setFiles);
+  const { getItemProps, getHandleProps } = useSortableList(files, setFiles);
 
   return (
     <section className="space-y-6">
@@ -47,7 +46,7 @@ export const HandleOnlyUsage = () => {
       <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
         <ol className="space-y-3">
           {files.map((file, index) => {
-            const { isDragging, ...props } = getFileProps(index);
+            const { isDragging, ...props } = getItemProps(index);
             return (
               <li
                 key={file.id}
@@ -63,7 +62,7 @@ export const HandleOnlyUsage = () => {
               >
                 {/* Handle Icon */}
                 <button
-                  {...getFileHandleProps()}
+                  {...getHandleProps()}
                   className="p-2 text-slate-400 hover:bg-slate-100 rounded-lg transition-colors cursor-grab active:cursor-grabbing"
                   aria-label="Drag handle"
                 >

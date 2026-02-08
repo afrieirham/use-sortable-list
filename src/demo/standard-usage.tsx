@@ -33,7 +33,7 @@ const DragIcon = () => (
 
 export const StandardUsage = () => {
   const [tasks, setTasks] = useState(INITIAL_TASKS);
-  const { getItemProps: getTaskProps } = useSortableList(tasks, setTasks);
+  const { getItemProps } = useSortableList(tasks, setTasks);
 
   return (
     <section className="space-y-6">
@@ -47,7 +47,7 @@ export const StandardUsage = () => {
       <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
         <ol className="space-y-3">
           {tasks.map((task, index) => {
-            const { isDragging, ...props } = getTaskProps(index);
+            const { isDragging, ...props } = getItemProps(index);
             return (
               <li
                 key={task.id}
