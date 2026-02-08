@@ -85,9 +85,10 @@ const LibraryDemoPage = () => {
           <StandardUsage />
           <HandleOnlyUsage />
         </div>
-
-        {/* --- FEATURES GRID --- */}
-        <section className="mt-24 grid grid-cols-1 md:grid-cols-3 gap-8 border-t border-slate-200 pt-16">
+      </main>
+      {/* --- FEATURES GRID --- */}
+      <div className="py-12 px-4">
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           <div className="space-y-2">
             <h3 className="font-bold text-lg">Zero Dependencies</h3>
             <p className="text-slate-600 text-sm">
@@ -110,9 +111,40 @@ const LibraryDemoPage = () => {
             </p>
           </div>
         </section>
-      </main>
+      </div>
 
-      <footer className="py-16 text-center text-slate-400 text-sm border-t border-slate-200 mt-20 bg-white">
+      {/* --- DID YOU LIKE THIS? SECTION --- */}
+      <div className="bg-white">
+        <section className="py-20 px-6 text-center">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">
+              Did you like this project?
+            </h2>
+            <p className="text-slate-600 leading-relaxed">
+              Please give it a star on{" "}
+              <a
+                href="https://github.com/afrieirham/use-sortable-list"
+                className="text-blue-400 underline"
+              >
+                GitHub
+              </a>
+              . Thank you!
+            </p>
+            <p className="text-slate-600 leading-relaxed">
+              You might also be interested in{" "}
+              <a
+                href="https://use-local-state.pages.dev"
+                className="text-blue-400 underline"
+              >
+                use-local-state
+              </a>
+              .
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <footer className="py-16 text-center text-slate-400 text-sm">
         &copy; {new Date().getFullYear()} use-local-state. Created by{" "}
         <a href="https://afrieirham.com" className="hover:underline">
           Afrie
