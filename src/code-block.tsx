@@ -99,9 +99,9 @@ const CodeBlock = ({ title, code }: Props) => {
 
         {/* Code Content Area */}
         <div
-          className={`relative transition-all duration-500 ease-in-out ${isOpen ? "max-h-[3000px]" : "max-h-[180px] overflow-hidden"}`}
+          className={`relative transition-all duration-500 ease-in-out ${isOpen ? "" : "max-h-[180px] overflow-hidden"}`}
         >
-          <div className="bg-[#0f172a] p-8 text-left">
+          <div className="bg-[#0f172a] p-8 text-left overflow-scroll">
             <pre className="text-[13px] font-mono leading-relaxed whitespace-pre">
               <code
                 className="block w-full text-slate-300"
