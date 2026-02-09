@@ -7,7 +7,7 @@ import type { Route } from "./+types/home";
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "use-sortable-list" },
-    { name: "description", content: "Welcome to React Router!" },
+    { name: "description", content: "A tiny, headless React hook for native drag-and-drop reordering. No dependencies. No bloat. Just works." },
   ];
 }
 
