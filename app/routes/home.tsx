@@ -153,7 +153,7 @@ export default function Home() {
       </div>
 
       <footer className="py-16 text-center text-slate-400 text-sm">
-        &copy; {new Date().getFullYear()} use-local-state. Created by{" "}
+        &copy; {new Date().getFullYear()} use-sortable-list. Created by{" "}
         <a href="https://afrieirham.com" className="hover:underline">
           Afrie
         </a>
